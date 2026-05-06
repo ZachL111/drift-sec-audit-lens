@@ -1,0 +1,32 @@
+{
+  "index": 508,
+  "phase": 2,
+  "batch": 57,
+  "name": "drift-sec-audit-lens",
+  "planned_name": "drift-sec-audit-lens",
+  "language": "PHP",
+  "category": "Security tooling",
+  "goal": "Implement a PHP security tooling project for audit policy evaluation, using deny and allow fixtures and explainable decision traces.",
+  "repository_url": "https://github.com/ZachL111/drift-sec-audit-lens",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 171,
+    "risk_penalty": 6,
+    "latency_penalty": 3,
+    "weight_bonus": 4,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
