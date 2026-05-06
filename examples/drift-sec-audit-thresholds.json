@@ -1,0 +1,17 @@
+{
+  "repo": "drift-sec-audit-lens",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 180,
+    "watch": 101
+  },
+  "terms": [
+    "trust boundary",
+    "claim drift",
+    "replay exposure",
+    "policy width"
+  ]
+}
